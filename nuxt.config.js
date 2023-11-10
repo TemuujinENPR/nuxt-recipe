@@ -23,11 +23,13 @@ export default {
   ** Global CSS
   */
   css: [
+    'boxicons/css/boxicons.min.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/firebase.js',
   ],
   /*
   ** Nuxt.js dev-modules

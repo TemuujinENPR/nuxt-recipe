@@ -1,55 +1,44 @@
 <template>
-  <div>
+  <div class="container">
+    <Navbar />
     <nuxt />
+    <Footer />
   </div>
 </template>
 
+<script>
+import Navbar from '../components/Navbar'
+import Footer from '~/components/Footer'
+
+export default {
+  components: {
+    Navbar,
+    Footer
+  },
+  head() {
+    return {
+      title: "Нүүр"
+    }
+  }
+}
+</script>
+
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+:root {
+  --primary-text: #333;
+  --primary-border: #ddd;
+  --secondary-border: #eee;
+  --green: #15A21E;
+  --blue: #156BAD;
 }
 </style>
