@@ -177,4 +177,13 @@ form .navigate {
     padding: 2rem 3rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+  .login {
+    width: 100%;
+  }
+}
 </style>

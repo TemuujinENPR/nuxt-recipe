@@ -196,4 +196,17 @@ form textarea {
 	padding: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0 1rem;
+	}
+	.card {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.left, .right {
+		width: 100%;
+	}
+}
+
 </style>
