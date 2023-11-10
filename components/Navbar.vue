@@ -147,10 +147,4 @@ nav a {
 .logout-btn:hover {
   background: black;
 }
-
-@media screen and (max-width: 600px) {
-  .header {
-    flex-direction: column;
-  }
-}
 </style>
