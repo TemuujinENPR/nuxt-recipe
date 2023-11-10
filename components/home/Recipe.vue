@@ -9,16 +9,14 @@
           </div>
           <img :src="recipe.image" alt="Food Image" />
         </div>
-        <nuxt-link style="text-decoration: none;" :to="`/recipes/${recipe.id}`">
-          <div class="content">
-            <h3 class="food-name">{{ recipe.foodName }}</h3>
-            <p class="description">{{ recipe.description }}</p>
-            <div class="rating">
-              <span>★ {{ recipe.rating }}</span>
-              <!-- <span class="star" v-for="n in recipe.rating" :key="n">★</span> -->
-            </div>
+        <div class="content">
+          <h3 class="food-name">{{ recipe.foodName }}</h3>
+          <p class="description">{{ recipe.description }}</p>
+          <div class="rating">
+            <span>★ {{ recipe.rating }}</span>
+            <!-- <span class="star" v-for="n in recipe.rating" :key="n">★</span> -->
           </div>
-        </nuxt-link>
+        </div>
       </div>
     </div>
   </section>
