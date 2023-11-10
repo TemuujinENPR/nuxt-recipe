@@ -179,6 +179,7 @@ export default {
 }
 
 .description {
+  color: gray;
   font-size: 1rem;
 }
 

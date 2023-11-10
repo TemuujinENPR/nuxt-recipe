@@ -193,7 +193,6 @@ form textarea {
 }
 
 .recipe {
-	border: 1px solid var(--primary-border);
 	padding: 1rem;
 }
 
